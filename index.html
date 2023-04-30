@@ -1,0 +1,35 @@
+<!doctype html>
+	<head>
+        <link data-default-icon="logo.png" rel="icon" sizes="192x192" href="logo.png" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<title>Voice to Text</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        <header class="bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light cs-light" id="header-nav" role="navigation">
+                <div class="container">
+                  <img draggable="false" src="logo.png"><h2>Speech to Text</h2>
+                  <a href="help.html"><button class="btn btn-success" type="button">HELP</button></a>
+                </div>
+            </nav>
+        </header>
+        <div class="container" style="padding-top: 100px;">
+            <h5 class="text-center">Converted Text will Appear Here.</h5>
+            <div id="output" style="padding-left: 10px;" class="card hide" contenteditable><br><br><br></div>
+            <div class="text-center"><br>
+            <div class="mx-auto"><button type="button" class="btn btn-primary" onclick="runSpeechRecognition()"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+                <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+                <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+              </svg></button> &nbsp; <span id="action"></span></div><br>
+            
+            
+            </div>
+        </div>
+		
+	</body>
+</html>
